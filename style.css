@@ -1,0 +1,533 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'poppins';
+}
+html{
+    font-size: 10px;
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;
+    
+}
+body
+{
+    color: white;
+    background: rgb(51, 51, 51);
+    
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color:white;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    animation: slideRight 1s ease forwards;
+}
+.navbar a{
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    
+    transition:.3s;
+    text-shadow: cyan;
+    animation: slideTop .5s ease forwards;
+}
+.navbar a:hover{
+    color: cyan;
+    box-shadow: cyan;
+    text-shadow: 0 0 5px cyan,
+     0 0 25px cyan, 0 0 50px cyan,
+     0 0 100px cyan, 0 0 200px cyan,
+    
+}
+.Home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url('image/bgp.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.Home-content {
+    max-width: 600px;
+}
+.Home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+.Home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+}
+.Home-content h3{
+    color: cyan;
+}
+.Home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+.Home-content p{
+    font-size: 20px;
+}
+.Home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid cyan;
+    border-radius: 50%;
+    font-size: 20px;
+    color: cyan;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+
+}
+.Home-sci a:hover {
+    background: cyan;
+    color: white;
+    box-shadow: 0 0 20px cyan;
+}.btn-box{
+     
+    background-color: cyan;
+    display: inline-block;
+     padding: 12px 28px;
+     background: cyan,;
+     border-radius: 40px;
+     font-size: 16px;
+     color: #000000;
+     letter-spacing: 1px;
+     text-decoration: none;
+     font-weight:600;
+        width: 180px;
+        height: 60px;
+        padding: 20px;
+        margin: 20px;
+      }
+      
+ .btn-box:hover{
+    background-color: cyan;
+    box-shadow: 0 0 5px cyan,
+     0 0 25px cyan,0 0 50px cyan,
+     0 0 100px cyan, 0 0 200px cyan;
+ }
+
+ .About{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+
+ }
+.about-img img{
+    padding-bottom: 20%;
+    max-width: 630px;
+    height: 40%;
+    width: 40%;
+    border-radius: 8px;
+    margin-left: 4rem;
+    margin: 4rem;
+}
+
+.about-text h2{
+    font-weight: 700;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 60px;
+    color: cyan;
+}
+.about-text h2 span{
+    color: cyan;
+   
+}
+.about-text h4{
+    font-size: 29px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+    text-align: center;
+
+}
+.about-text p{
+    font-size: 20px;
+    width: 40%;
+    text-align-last: center;
+    margin-left: 30%;
+}
+
+.about-text a {
+    display: center;
+    box-shadow: cyan;
+    margin-left: 45%;
+}
+
+
+#Works{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 3%;
+    padding-bottom: 5px;
+}
+.sub-title span{
+    color:cyan;
+}
+.container{
+    padding: 10px;
+    margin-top: 3%;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s,transform 0.5s;
+    box-shadow: 
+                1px 1px 40px cyan;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: black;
+    background-color: cyan;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div p{
+    font-size: 20px;
+}
+.read{
+    display: inline-block;
+    padding: 12px 28px;
+    background: cyan (255, 0, 0);
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px cyan;
+}
+.read:hover{
+    background-color: cyan;
+    color: white;
+    box-shadow: 0 0 20px cyan;
+
+}
+.services-list div:hover{
+    transform: translateY(-10px);
+}
+
+.container1{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+.bar{
+    font-size: 23px;
+}
+.Technical-bars .bar{
+    margin-top: 40px 0;
+}
+.Technical-bars .bar:first-child{
+    margin-top: 0;
+}
+.Technical-bars .bar:last-child{
+    margin-bottom: 0;
+}
+.Technical-bars .bar .info{
+    margin-bottom: 5px;
+}
+.Technical-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation:  0.5s 1s linear forwards;
+    opacity: 0;
+}
+.Technical-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate{
+    100%{transform: scaleX(1);
+    }
+}
+.Technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color: cyan;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress-line .html span{
+    width: 90%;
+}
+.progress-line .css span{
+    width: 60%;
+}
+.progress-line .python span{
+    width: 50%;
+}
+.progress-line .c+ span{
+    width: 90%;
+}
+.contact {
+    background: var(--second-bg-color);
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+.contact-number p {
+font-size: small;
+}
+.contact h1{
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.contact h1 span{
+    color: cyan;
+    text-align: center;
+}
+.contact h2 {
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact form {
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact form .input-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box .input-field {
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+}
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder {
+    color: var(--text-color);
+}
+.contact form .focus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    border-radius: .6rem;
+    z-index: -1;
+    transition: .5s;
+}
+.contact form .input-box .input-field input:focus~.focus,
+.contact form .input-box .input-field input:valid~.focus,
+.contact form .textarea-field textarea:focus~.focus,
+.contact form .textarea-field textarea:valid~.focus{
+    width: 100%;
+}
+.contact form .textarea-field {
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+.contact form .textarea-field textarea {
+    resize: none;
+}
+.contact form btn {
+    cursor: pointer;
+    color: black;
+    font-size: 60px;
+}
+.contact button{
+    background-color: cyan;
+    display: inline-block;
+     padding: 12px 28px;
+     background: cyan,;
+     border-radius: 40px;
+     font-size: 30px;
+     color: #000000;
+     letter-spacing: 0px;
+     text-decoration: none;
+     font-weight:600;
+        width: 150px;
+        height: 60px;
+        padding: 20px;
+        margin: 20px;
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+/*End contact Section */
+
+/* Footer */
+#footer {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+    #footer .footer {
+        min-height: 200px;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+
+    #footer h2 {
+        color: white;
+        font-weight: 500;
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #footer .social-icon {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    #footer .social-item {
+        height: 50px;
+        width: 50px;
+        margin: 0 5px;
+    }
+
+        #footer .social-item img {
+            filter: grayscale(1);
+            transition: 0.3s ease filter;
+        }
+
+        #footer .social-item:hover img {
+            filter: grayscale(0);
+        }
+
+    #footer p {
+        color: white;
+        font-size: 1.3rem;
+    }
+
+
+
+
+
+
+
+
+ @keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+ }
+ @keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+ }
+ @keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+ }
